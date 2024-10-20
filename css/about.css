@@ -1,0 +1,645 @@
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: #fff; /* White background for the section */
+}
+
+.about-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #000;
+}
+
+.about-history {
+    margin-bottom: 40px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.history-text {
+    flex: 1;
+    text-align: start;
+}
+
+.history-images {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.history-image-wrapper {
+    width: 100%;
+    max-width: 500px;
+}
+
+.history-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #e74c3c; /* Red border for images */
+}
+
+.img1 {
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.img2 {
+    height: auto;
+    object-fit: cover;
+    margin-top: 25px;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-mission,
+.about-values {
+    flex: 1;
+    text-align: center;
+}
+
+.about-mission h2,
+.about-values h2,
+.about-history h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #e74c3c; /* Red color for headings */
+}
+
+.about-mission p,
+.about-values p {
+    font-size: 1em;
+    color: #000; /* Black text color for paragraphs */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .history-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-images {
+        align-items: center;
+    }
+
+    .about-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-mission,
+    .about-values {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-mission p,
+    .about-values,
+    .history-text p {
+        font-size: 0.8em;
+    }
+}
+
+/* Certifications Section */
+.certifications-section {
+    padding: 60px 20px;
+    background-color: #fff; /* White background for the section */
+    text-align: center;
+}
+
+.certifications-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.certifications-section h2,
+.faq-section h2,
+.brands-section h2 {
+    font-size: 2.5em;
+    color: #e74c3c; /* Red color for heading */
+    margin-bottom: 40px;
+}
+
+.certifications-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certification-card {
+    width: 400px;
+    height: 350px;
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    border: 15px solid #e74c3c; /* Red border for certification cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.certification-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.certification-card p {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #f9f9f9;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .certifications-grid {
+        align-items: center;
+    }
+
+    .certification-card {
+        width: 48%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certifications-section h2 {
+        font-size: 2em;
+    }
+
+    .certification-card p {
+        font-size: 1em;
+    }
+}
+
+/* Team Section */
+.team-section {
+    padding: 60px 20px;
+    background-color: #fff; /* White background for the section */
+    text-align: center;
+}
+
+.team-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.team-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #e74c3c; /* Red color for heading */
+    animation: fadeIn 1s ease-out;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    background: #fff; /* White background for team members */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+.team-member:hover {
+    transform: scale(1);
+}
+
+.team-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 5px solid #e74c3c; /* Red border for team images */
+    animation: fadeInImage 1s ease-in-out;
+}
+
+.team-details {
+    padding: 20px;
+}
+
+.team-details h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333; /* Dark gray color for headings */
+}
+
+.team-details p {
+    font-size: 1em;
+    color: #666; /* Gray color for text */
+    margin-bottom: 15px;
+}
+
+.video-intro-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff; /* White color for text */
+    background-color: #e74c3c; /* Red background for button */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.video-intro-link:hover {
+    background-color: #cc0000; /* Darker red for hover effect */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .team-grid {
+        align-items: center;
+        display: flex;
+    }
+
+    .team-member {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-section h2 {
+        font-size: 2em;
+    }
+
+    .team-details h3 {
+        font-size: 1.2em;
+    }
+
+    .team-details p {
+        font-size: 0.9em;
+    }
+
+    .video-intro-link {
+        font-size: 0.9em;
+    }
+
+    .team-member {
+        max-width: 100%;
+    }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 60px 20px;
+    background-color: #fff; /* White background for the section */
+}
+
+.testimonials-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5em;
+    color: #e74c3c; /* Red color for heading */
+    margin-bottom: 40px;
+}
+
+.testimonials-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.testimonials-buttons {
+    display: flex;
+    padding: 10px;
+}
+
+.testimonials-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background for testimonial items */
+}
+
+.testimonial-text {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #333; /* Dark gray color for text */
+}
+
+.testimonial-author {
+    font-size: 1em;
+    color: #666; /* Gray color for author name */
+}
+
+.slider-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.slider-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonials-slider {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .slider-btn {
+        padding: 8px 12px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-section h2 {
+        font-size: 2em;
+    }
+
+    .testimonial-text {
+        font-size: 1em;
+    }
+
+    .testimonial-author {
+        font-size: 0.9em;
+    }
+
+    .slider-btn {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* FAQS */
+.faq-section {
+    padding: 60px 20px;
+    background-color: transparent;
+}
+
+.faq-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.faq-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    background: #e74c3c;
+    /* Accent color */
+    color: #fff;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.plus-icon,
+.minus-icon {
+    font-size: 1.2em;
+    transition: opacity 0.3s ease;
+}
+
+#plus-icon {
+    display: block;
+}
+
+#minus-icon {
+    display: none;
+}
+
+.faq-question.active #plus-icon {
+    display: none;
+}
+
+.faq-question.active #minus-icon {
+    display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .faq-section h2 {
+        font-size: 2em;
+    }
+
+    .faq-question {
+        font-size: 1em;
+    }
+
+    .faq-answer p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section h2 {
+        font-size: 1.8em;
+    }
+
+    .faq-question {
+        font-size: 0.9em;
+    }
+
+    .faq-answer p {
+        font-size: 0.8em;
+    }
+}
+
+/* Styling for the brand section */
+.brands-section {
+    padding: 40px 0;
+    background-color: transparent;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1300px;
+}
+
+.container {
+    margin: auto;
+    padding: 0 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.brands-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 30%;
+    margin: 0 10px 20px;
+    transition: transform 0.3s ease;
+    max-width: 33.33%;
+}
+
+.brand-item h3 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.brand-item:hover {
+    transform: translateY(-10px);
+}
+
+.brand-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .brand-item {
+        flex: 1 1 45%; /* Two items per row on medium screens */
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-item {
+        flex: 1 1 100%; /* One item per row on small screens */
+        max-width: 100%;
+    }
+}
